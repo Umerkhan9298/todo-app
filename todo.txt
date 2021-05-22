@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Array.filter()</h2>
+
+<p>Creates a new array with all array elements that passes a test.</p>
+
+<p id="demo"></p>
+
+
+<script>
+const arr1 = [4, 23, 7, 6, 3, 6, 4, 3, 56, 4];
+const arr2 = [4, 56, 23];
+
+const filterArray = (arr1, arr2) => {
+   const filtered = arr1.filter(el => {
+      return arr2.indexOf(el) === -1;
+   });
+   return filtered;
+};
+
+document.getElementById("demo").innerHTML = filterArray(arr1, arr2);
+
+</script>
+
+</body>
+</html>
+
+https://www.tutorialspoint.com/filter-array-based-on-another-array-in-javascript
+
+We are required to write a React js function that takes in these two arrays in state and filters the first to contain only those properties and thier values that are not present in the second array of state. And then return the filtered array.
